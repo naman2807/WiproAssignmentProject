@@ -9,7 +9,6 @@
     -fx-border-style: solid 2px #668ad8;
     -fx-text-alignment: center;
     -fx-alignment: middle;
-    -fx-text-overrun: hidden;
     -fx-font-weight: bold;
     transition: .4s;
 }
