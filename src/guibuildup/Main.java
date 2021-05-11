@@ -21,10 +21,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MainWindow.fxml")));
         primaryStage.setTitle("GLA University Exam Portal");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setScene(new Scene(root, 900, 500));
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);
