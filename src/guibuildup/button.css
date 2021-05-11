@@ -1,2 +1,19 @@
 
+.btn{
+    -fx-content-display: inline-block;
+    -fx-background-color: #668ad8;
+    -fx-border-width: 10px;
+    -fx-fill-height: 10px;
+    -fx-fill-width: 10px;
+    -fx-border-radius: 50%;
+    -fx-border-style: solid 2px #668ad8;
+    -fx-text-alignment: center;
+    -fx-alignment: middle;
+    -fx-text-overrun: hidden;
+    -fx-font-weight: bold;
+    transition: .4s;
+}
 
+.btn:hover {
+    -fx-background-color: #b3e1ff;
+}
