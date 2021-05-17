@@ -18,4 +18,6 @@ public class MainWindowController {
     private Button addCandidate;
     @FXML
     private ComboBox<FXCollections> showCandidateRecord;
+    @FXML
+    private Button exit;
 }

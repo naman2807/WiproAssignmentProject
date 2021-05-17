@@ -150,7 +150,7 @@
                                 <Insets left="20.0" top="10.0" />
                             </HBox.margin>
                         </Label>
-                        <Button id="addCandidate" maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="13.0" prefWidth="126.0" styleClass="btn" text="Exit">
+                        <Button id="exit" maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefHeight="13.0" prefWidth="126.0" styleClass="btn" text="Exit">
                             <HBox.margin>
                                 <Insets left="452.0" top="7.0" />
                             </HBox.margin>
