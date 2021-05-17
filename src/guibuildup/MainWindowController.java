@@ -1,7 +1,9 @@
 package guibuildup;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 
 /**
  * Created By: Naman Agarwal
@@ -14,4 +16,6 @@ import javafx.scene.control.Button;
 public class MainWindowController {
     @FXML
     private Button addCandidate;
+    @FXML
+    private ComboBox<FXCollections> showCandidateRecord;
 }
