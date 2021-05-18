@@ -102,6 +102,7 @@ public class CandidateMain {
             if (status.equalsIgnoreCase("fail")) {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error");
+                alert.setHeaderText("Cannot add student to record");
 
 
             } else {
