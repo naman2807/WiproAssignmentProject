@@ -92,7 +92,7 @@
                                 <Font name="Bell MT Bold" size="18.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="marks11" prefWidth="250.0" promptText="Enter Marks In Physics">
+                        <TextField fx:id="marks2" prefWidth="250.0" promptText="Enter Marks In Physics">
                             <HBox.margin>
                                 <Insets left="30.0" />
                             </HBox.margin>
@@ -112,7 +112,7 @@
                                 <Font name="Bell MT Bold" size="18.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="marks111" prefWidth="250.0" promptText="Enter Marks In Chemistry">
+                        <TextField fx:id="marks3" prefWidth="250.0" promptText="Enter Marks In Chemistry">
                             <HBox.margin>
                                 <Insets left="30.0" />
                             </HBox.margin>

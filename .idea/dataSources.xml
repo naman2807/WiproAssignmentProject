@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="wiproassignment@localhost" uuid="e2ee7753-77ad-4d9f-847c-2f8192f84384">
+    <data-source source="LOCAL" name="wiproassignment@localhost" uuid="bb518a7c-dd76-4b9d-bb77-33b4f93bdb91">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>

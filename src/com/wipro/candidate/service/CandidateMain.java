@@ -117,7 +117,6 @@ public class CandidateMain {
         alert.setTitle(title);
         alert.setHeaderText(headerText);
         alert.setContentText(contentText);
-        alert.getButtonTypes().add(ButtonType.OK);
         Optional<ButtonType> result = alert.showAndWait();
         if(result.isPresent() && result.get() == ButtonType.OK){
             alert.close();

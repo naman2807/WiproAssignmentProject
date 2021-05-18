@@ -1,5 +1,6 @@
 package guibuildup;
 
+import com.wipro.candidate.util.DBUtil;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -23,6 +24,7 @@ public class Main extends Application {
         primaryStage.setTitle("GLA University Exam Portal");
         primaryStage.setScene(new Scene(root, 1200, 500));
         primaryStage.show();
+        DBUtil.connectToDatabase();
     }
 
     public static void main(String[] args) {
