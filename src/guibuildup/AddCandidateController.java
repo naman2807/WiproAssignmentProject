@@ -16,4 +16,6 @@ public class AddCandidateController {
     private TextField studentName;
     @FXML
     private TextField marks1;
+    @FXML
+    private TextField marks2;
 }
