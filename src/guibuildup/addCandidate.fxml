@@ -78,6 +78,26 @@
                         <Insets top="15.0" />
                     </VBox.margin>
                 </HBox>
+                <HBox prefWidth="200.0">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                    <children>
+                        <Label text="Marks 2:" textFill="#d119b0">
+                            <font>
+                                <Font name="Bell MT Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="marks11" prefWidth="250.0" promptText="Enter marks in Physics">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </HBox>
             </children>
             <BorderPane.margin>
                 <Insets left="15.0" top="30.0" />
