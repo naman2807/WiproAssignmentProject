@@ -14,26 +14,6 @@ public class CandidateMain {
     private static final Scanner scanner = new Scanner(System.in);
     private static final CandidateDAO candidateDAO = new CandidateDAO();
 
-    public static void main(String[] args) {
-        DBUtil.connectToDatabase();
-        boolean isProcess = true;
-        int choice;
-        instructions();
-        while (isProcess) {
-            System.out.println("Enter Your choice: ");
-            choice = scanner.nextInt();
-            scanner.nextLine();
-            switch (choice) {
-                case 1 -> addCandidateToRecord();
-                case 2 -> showCandidateList();
-                case 3 -> instructions();
-                case 4 -> isProcess = false;
-                default -> instructions();
-            }
-        }
-
-    }
-
     /**
      * This method shows instructions.
      */
@@ -48,18 +28,11 @@ public class CandidateMain {
     /**
      * This method takes details of candidate from the user.
      */
-    private static void addCandidateToRecord() {
-        System.out.println("Enter candidate's name: ");
-        String name = scanner.nextLine();
-        System.out.println("Enter marks of subject 1: ");
-        int m1 = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("Enter marks of subject 2: ");
-        int m2 = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("Enter marks of subject 3: ");
-        int m3 = scanner.nextInt();
-        scanner.nextLine();
+    public static void addCandidateToRecord(CandidateBean candidateBean) {
+        String name = candidateBean.getName();
+        int m1 = candidateBean.getM1();
+        int m2 = candidateBean.getM2();
+        int m3 = candidateBean.getM3();
         if (name == null || name.isBlank() || name.isEmpty() || name.length() < 2 || m1 < 0 || m1 > 100
                 || m2 < 0 || m2 > 100 || m3 < 0 || m3 > 100) {
             addCandidate(null);
@@ -120,7 +93,7 @@ public class CandidateMain {
      *
      * @param studBean
      */
-    public static void addCandidate(CandidateBean studBean) {
+    private static void addCandidate(CandidateBean studBean) {
         try {
             String status = candidateDAO.addCandidate(studBean);
             if (status.equalsIgnoreCase("fail")) {
