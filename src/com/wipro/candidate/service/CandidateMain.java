@@ -100,17 +100,10 @@ public class CandidateMain {
         try {
             String status = candidateDAO.addCandidate(studBean);
             if (status.equalsIgnoreCase("fail")) {
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("Error");
-                alert.setHeaderText("Cannot add student to record");
-                alert.setContentText("Cannot add student to record");
-                alert.getButtonTypes().add(ButtonType.OK);
-                Optional<ButtonType> result = alert.showAndWait();
-                if(result.isPresent() && result.get() == ButtonType.OK){
-                    alert.close();
-                }
+                showAlert(Alert.AlertType.ERROR,"Error","Cannot add student to record",
+                        "Please check data again." );
             } else {
-                System.out.println(studBean.getId() + ":" + status);
+
             }
         } catch (WrongDataException e) {
             System.out.println(e.toString());
@@ -119,7 +112,15 @@ public class CandidateMain {
     }
 
     private static void showAlert(Alert.AlertType type, String title, String headerText, String contentText){
-
+        Alert alert = new Alert(type);
+        alert.setTitle(title);
+        alert.setHeaderText(headerText);
+        alert.setContentText(contentText);
+        alert.getButtonTypes().add(ButtonType.OK);
+        Optional<ButtonType> result = alert.showAndWait();
+        if(result.isPresent() && result.get() == ButtonType.OK){
+            alert.close();
+        }
     }
 
     /**
