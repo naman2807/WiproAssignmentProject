@@ -25,5 +25,6 @@ public class AddCandidateController {
         String name = studentName.getText();
         int maths = Integer.parseInt(marks1.getText());
         int physics = Integer.parseInt(marks2.getText());
+        int chemistry = Integer.parseInt(marks3.getText());
     }
 }
