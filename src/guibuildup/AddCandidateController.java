@@ -23,5 +23,6 @@ public class AddCandidateController {
 
     public void addCandidateToDatabase(){
         String name = studentName.getText();
+        int maths = Integer.parseInt(marks1.getText());
     }
 }
