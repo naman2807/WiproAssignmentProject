@@ -20,4 +20,8 @@ public class AddCandidateController {
     private TextField marks2;
     @FXML
     private TextField marks3;
+
+    public void addCandidateToDatabase(){
+        String name = studentName.getText();
+    }
 }
