@@ -1,5 +1,7 @@
 package guibuildup;
 
+import com.wipro.candidate.bean.CandidateBean;
+import com.wipro.candidate.service.CandidateMain;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -26,5 +28,6 @@ public class AddCandidateController {
         int maths = Integer.parseInt(marks1.getText());
         int physics = Integer.parseInt(marks2.getText());
         int chemistry = Integer.parseInt(marks3.getText());
+        CandidateMain.addCandidate(new CandidateBean(name, maths, physics, chemistry));
     }
 }
