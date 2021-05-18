@@ -101,6 +101,8 @@ public class CandidateMain {
             String status = candidateDAO.addCandidate(studBean);
             if (status.equalsIgnoreCase("fail")) {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+
 
             } else {
                 System.out.println(studBean.getId() + ":" + status);
