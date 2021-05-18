@@ -31,6 +31,7 @@ public class MainWindowController {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("addCandidate.fxml"));
         Parent root = fxmlLoader.load();
+        stage.setTitle("Add Candidate");
 
     }
 }
