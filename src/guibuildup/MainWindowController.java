@@ -2,6 +2,7 @@ package guibuildup;
 
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
@@ -24,6 +25,7 @@ public class MainWindowController {
 
     public void setAddCandidate(){
         Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader();
 
     }
 }
