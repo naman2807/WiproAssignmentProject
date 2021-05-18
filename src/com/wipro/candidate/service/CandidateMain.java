@@ -118,6 +118,10 @@ public class CandidateMain {
 
     }
 
+    private static void showAlert(Alert.AlertType type, String title, String headerText, String contentText){
+
+    }
+
     /**
      * Show list of candidates.
      */
