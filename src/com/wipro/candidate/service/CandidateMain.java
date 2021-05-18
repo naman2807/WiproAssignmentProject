@@ -103,7 +103,8 @@ public class CandidateMain {
                 showAlert(Alert.AlertType.ERROR,"Error","Cannot add student to record",
                         "Please check data again." );
             } else {
-
+                showAlert(Alert.AlertType.INFORMATION,"Confirmation",studBean.getId() + ":" + status,
+                       "Added!. Click on OK to close window." );
             }
         } catch (WrongDataException e) {
             System.out.println(e.toString());
