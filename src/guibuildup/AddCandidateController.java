@@ -1,5 +1,8 @@
 package guibuildup;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+
 /**
  * Created By: Naman Agarwal
  * User ID: naman2807
@@ -9,5 +12,6 @@ package guibuildup;
  */
 
 public class AddCandidateController {
-
+    @FXML
+    private TextField studentName;
 }
