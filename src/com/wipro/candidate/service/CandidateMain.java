@@ -4,9 +4,12 @@ import com.wipro.candidate.bean.CandidateBean;
 import com.wipro.candidate.dao.CandidateDAO;
 import com.wipro.candidate.util.DBUtil;
 import com.wipro.candidate.util.WrongDataException;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.Scanner;
 
 
@@ -97,7 +100,8 @@ public class CandidateMain {
         try {
             String status = candidateDAO.addCandidate(studBean);
             if (status.equalsIgnoreCase("fail")) {
-                System.out.println("Error");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+
             } else {
                 System.out.println(studBean.getId() + ":" + status);
             }
