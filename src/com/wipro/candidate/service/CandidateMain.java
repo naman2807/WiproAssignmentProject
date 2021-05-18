@@ -103,6 +103,7 @@ public class CandidateMain {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error");
                 alert.setHeaderText("Cannot add student to record");
+                alert.setContentText("Cannot add student to record");
 
 
             } else {
