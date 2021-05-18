@@ -104,6 +104,7 @@ public class CandidateMain {
                 alert.setTitle("Error");
                 alert.setHeaderText("Cannot add student to record");
                 alert.setContentText("Cannot add student to record");
+                alert.getButtonTypes().add(ButtonType.OK);
 
 
             } else {
