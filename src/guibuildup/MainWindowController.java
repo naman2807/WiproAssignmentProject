@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.stage.Stage;
 
 /**
  * Created By: Naman Agarwal
@@ -22,6 +23,7 @@ public class MainWindowController {
     private Button exit;
 
     public void setAddCandidate(){
+        Stage stage = new Stage();
 
     }
 }
