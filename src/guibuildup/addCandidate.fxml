@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -10,7 +11,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane id="addCandidateBorderPane" fx:id="addCandidateBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="addCandidateBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="background"
+            fx:controller="guibuildup.AddCandidateController"
+            stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
     <top>
         <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <children>
@@ -51,7 +55,7 @@
                                 <Font name="Bell MT Bold" size="18.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="studentName" prefWidth="250.0" promptText="Enter student name">
+                        <TextField fx:id="studentName" prefWidth="250.0" promptText="Enter Student Name">
                             <HBox.margin>
                                 <Insets left="50.0" />
                             </HBox.margin>
@@ -68,7 +72,7 @@
                                 <Font name="Bell MT Bold" size="18.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="marks1" prefWidth="250.0" promptText="Enter marks in Maths">
+                        <TextField fx:id="marks1" prefWidth="250.0" promptText="Enter Marks In Maths">
                             <HBox.margin>
                                 <Insets left="30.0" />
                             </HBox.margin>
@@ -88,7 +92,27 @@
                                 <Font name="Bell MT Bold" size="18.0" />
                             </font>
                         </Label>
-                        <TextField fx:id="marks11" prefWidth="250.0" promptText="Enter marks in Physics">
+                        <TextField fx:id="marks11" prefWidth="250.0" promptText="Enter Marks In Physics">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                    <children>
+                        <Label text="Marks 3:" textFill="#d119b0">
+                            <font>
+                                <Font name="Bell MT Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="marks111" prefWidth="250.0" promptText="Enter Marks In Chemistry">
                             <HBox.margin>
                                 <Insets left="30.0" />
                             </HBox.margin>
@@ -104,4 +128,11 @@
             </BorderPane.margin>
         </VBox>
     </center>
+    <bottom>
+        <Button mnemonicParsing="false" prefWidth="150.0" text="Add Candidate" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="130.0" right="45.0" />
+            </BorderPane.margin>
+        </Button>
+    </bottom>
 </BorderPane>
