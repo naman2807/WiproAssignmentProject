@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.BorderPane;
@@ -36,6 +37,7 @@ public class MainWindowController {
         Parent root = fxmlLoader.load();
         stage.setTitle("Add Candidate");
         stage.initOwner(mainWindowController.getScene().getWindow());
+        stage.setScene(new Scene(root));
 
     }
 }
