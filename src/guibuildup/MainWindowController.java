@@ -35,6 +35,7 @@ public class MainWindowController {
         fxmlLoader.setLocation(getClass().getResource("addCandidate.fxml"));
         Parent root = fxmlLoader.load();
         stage.setTitle("Add Candidate");
+        stage.initOwner(mainWindowController.getScene().getWindow());
 
     }
 }
