@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane id="addCandidateBorderPane" fx:id="addCandidateBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
     <top>
         <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
@@ -58,6 +57,26 @@
                             </HBox.margin>
                         </TextField>
                     </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                    <children>
+                        <Label text="Marks 1:" textFill="#d119b0">
+                            <font>
+                                <Font name="Bell MT Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="marks1" prefWidth="250.0" promptText="Enter marks in Maths">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
                 </HBox>
             </children>
             <BorderPane.margin>
