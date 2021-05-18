@@ -106,7 +106,9 @@ public class CandidateMain {
                 alert.setContentText("Cannot add student to record");
                 alert.getButtonTypes().add(ButtonType.OK);
                 Optional<ButtonType> result = alert.showAndWait();
-
+                if(result.isPresent() && result.get() == ButtonType.OK){
+                    alert.close();
+                }
             } else {
                 System.out.println(studBean.getId() + ":" + status);
             }
