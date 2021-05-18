@@ -9,4 +9,5 @@ package guibuildup;
  */
 
 public class AddCandidateController {
+
 }
