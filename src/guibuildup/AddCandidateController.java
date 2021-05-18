@@ -14,4 +14,6 @@ import javafx.scene.control.TextField;
 public class AddCandidateController {
     @FXML
     private TextField studentName;
+    @FXML
+    private TextField marks1;
 }
