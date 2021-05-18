@@ -3,9 +3,12 @@ package guibuildup;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 /**
  * Created By: Naman Agarwal
@@ -23,10 +26,11 @@ public class MainWindowController {
     @FXML
     private Button exit;
 
-    public void setAddCandidate(){
+    public void setAddCandidate() throws IOException {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("addCandidate.fxml"));
+        Parent root = fxmlLoader.load();
 
     }
 }
