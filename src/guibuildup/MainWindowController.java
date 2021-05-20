@@ -24,7 +24,7 @@ public class MainWindowController {
     @FXML
     private Button addCandidate;
     @FXML
-    private ComboBox<FXCollections> showCandidateRecord;
+    private ComboBox<String> showCandidateRecord;
     @FXML
     private Button exit;
     @FXML
@@ -50,5 +50,6 @@ public class MainWindowController {
         stage.initOwner(mainWindowController.getScene().getWindow());
         stage.setScene(new Scene(root));
         stage.show();
+        String criteria = showCandidateRecord.getSelectionModel().getSelectedItem();
     }
 }
