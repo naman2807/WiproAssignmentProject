@@ -47,5 +47,6 @@ public class MainWindowController {
         loader.setLocation(getClass().getResource("showCandidates.fxml"));
         Parent root = loader.load();
         stage.setTitle("Student Data");
+        stage.initOwner(mainWindowController.getScene().getWindow());
     }
 }
