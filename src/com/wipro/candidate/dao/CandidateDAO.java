@@ -5,6 +5,9 @@ import com.wipro.candidate.bean.CandidateBean;
 import com.wipro.candidate.util.DBUtil;
 import com.wipro.candidate.util.DataSource;
 import com.wipro.candidate.util.WrongDataException;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -44,8 +47,8 @@ public class CandidateDAO {
      * @throws SQLException
      * @throws WrongDataException
      */
-    public ArrayList<CandidateBean> getByResult(String criteria) throws SQLException, WrongDataException {
-        ArrayList<CandidateBean> list = new ArrayList<CandidateBean>();
+    public ObservableList<CandidateBean> getByResult(String criteria) throws SQLException, WrongDataException {
+        ObservableList<CandidateBean> list = FXCollections.observableArrayList();
         if (criteria.equalsIgnoreCase("fail") || criteria.equalsIgnoreCase("pass")) {
             ResultSet resultSet = DataSource.showCandidates(DBUtil.getDBConn(), criteria);
             return addRecordToList(list, resultSet);
@@ -65,7 +68,7 @@ public class CandidateDAO {
      * @return list of candidates
      * @throws SQLException
      */
-    private ArrayList<CandidateBean> addRecordToList(ArrayList<CandidateBean> list, ResultSet resultSet) throws SQLException {
+    private ObservableList<CandidateBean> addRecordToList(ObservableList<CandidateBean> list, ResultSet resultSet) throws SQLException {
         while (resultSet.next()) {
             String id = resultSet.getString(1);
             String name = resultSet.getString(2);

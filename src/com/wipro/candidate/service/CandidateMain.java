@@ -4,6 +4,7 @@ import com.wipro.candidate.bean.CandidateBean;
 import com.wipro.candidate.dao.CandidateDAO;
 import com.wipro.candidate.util.DBUtil;
 import com.wipro.candidate.util.WrongDataException;
+import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 
@@ -126,10 +127,7 @@ public class CandidateMain {
     /**
      * Show list of candidates.
      */
-    private static void showCandidateList() {
-        System.out.println("Enter the criteria from the following on the basis of which you want the data of candidates:\n" +
-                "PASS/FAIL/ALL");
-        String criteria = scanner.nextLine();
+    public static void showCandidateList(String criteria) {
         ArrayList<CandidateBean> beanArrayList = displayAll(criteria);
         if (beanArrayList == null) {
             System.err.println("No record found");
@@ -143,8 +141,8 @@ public class CandidateMain {
      * @param criteria
      * @return list of candidates.
      */
-    public static ArrayList<CandidateBean> displayAll(String criteria) {
-        ArrayList<CandidateBean> list;
+    public static ObservableList<CandidateBean> displayAll(String criteria) {
+        ObservableList<CandidateBean> list;
         try {
             list = candidateDAO.getByResult(criteria);
         } catch (SQLException | WrongDataException e) {
