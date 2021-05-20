@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
@@ -25,10 +26,13 @@
     <top>
         <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@GLA_University_logo.png" />
                     </image>
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" top="10.0" />
+                    </HBox.margin>
                 </ImageView>
             </children>
         </HBox>
