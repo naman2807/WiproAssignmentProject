@@ -40,4 +40,8 @@ public class MainWindowController {
         stage.setScene(new Scene(root));
         stage.show();
     }
+
+    public void showCandidateRecord(){
+
+    }
 }
