@@ -29,7 +29,11 @@
                         <PropertyValueFactory property="name"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn prefWidth="106.4000244140625" text="Maths" />
+                <TableColumn prefWidth="106.4000244140625" text="Maths" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="m1"/>
+                    </cellValueFactory>
+                </TableColumn>
                 <TableColumn prefWidth="116.79998779296875" text="Physics" />
                 <TableColumn prefWidth="120.79998779296875" text="Chemistry" />
                 <TableColumn prefWidth="114.39996337890625" text="Result" />
@@ -39,21 +43,18 @@
     </center>
     <top>
         <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-            <children>
-                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@GLA_University_logo.png" />
-                    </image>
-                    <HBox.margin>
-                        <Insets bottom="20.0" left="10.0" top="10.0" />
-                    </HBox.margin>
-                </ImageView>
-                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="900.0" text="Student Record" textFill="#e4330f" underline="true">
-                    <font>
-                        <Font name="Algerian" size="36.0" />
-                    </font>
-                </Label>
-            </children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                <HBox.margin>
+                    <Insets bottom="20.0" left="10.0" top="10.0"/>
+                </HBox.margin>
+                <Image url="@GLA_University_logo.png"/>
+            </ImageView>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                   prefWidth="900.0" text="Student Record" textFill="#e4330f" underline="true">
+                <font>
+                    <Font name="Algerian" size="36.0"/>
+                </font>
+            </Label>
         </HBox>
     </top>
 </BorderPane>
