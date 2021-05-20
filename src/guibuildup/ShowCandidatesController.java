@@ -23,6 +23,6 @@ public class ShowCandidatesController {
     }
 
     public void clear(){
-
+        studentTable.getItems().clear();
     }
 }
