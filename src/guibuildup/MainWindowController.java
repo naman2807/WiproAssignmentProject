@@ -41,9 +41,10 @@ public class MainWindowController {
         stage.show();
     }
 
-    public void showCandidateRecord(){
+    public void showCandidateRecord() throws IOException {
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("showCandidates.fxml"));
+        Parent root = loader.load();
     }
 }
