@@ -47,11 +47,11 @@ public class MainWindowController {
         loader.setLocation(getClass().getResource("showCandidates.fxml"));
         Parent root = loader.load();
         ShowCandidatesController showCandidatesController = loader.getController();
-        String criteria = showCandidateRecord.getSelectionModel().getSelectedItem();
-        showCandidatesController.showStudentRecord(criteria);
         stage.setTitle("Student Data");
         stage.initOwner(mainWindowController.getScene().getWindow());
         stage.setScene(new Scene(root));
+        String criteria = showCandidateRecord.getSelectionModel().getSelectedItem();
+        showCandidatesController.showStudentRecord(criteria);
         stage.show();
 
     }

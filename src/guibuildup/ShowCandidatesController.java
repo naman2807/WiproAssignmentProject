@@ -21,4 +21,8 @@ public class ShowCandidatesController {
     public void showStudentRecord(String criteria){
 
     }
+
+    public void clear(){
+
+    }
 }
