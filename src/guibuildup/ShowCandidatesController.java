@@ -17,4 +17,8 @@ public class ShowCandidatesController {
     private TableView<CandidateBean> studentTable;
 
     public ShowCandidatesController(){}
+
+    public void showStudentRecord(String criteria){
+
+    }
 }
