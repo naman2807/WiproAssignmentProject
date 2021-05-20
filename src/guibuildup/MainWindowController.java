@@ -46,5 +46,6 @@ public class MainWindowController {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("showCandidates.fxml"));
         Parent root = loader.load();
+        stage.setTitle("Student Data");
     }
 }
