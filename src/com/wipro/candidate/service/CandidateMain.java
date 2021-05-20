@@ -127,14 +127,15 @@ public class CandidateMain {
     /**
      * Show list of candidates.
      */
-    public static void showCandidateList(String criteria) {
-        ArrayList<CandidateBean> beanArrayList = displayAll(criteria);
+    public static ObservableList<CandidateBean> showCandidateList(String criteria) {
+        ObservableList<CandidateBean> beanArrayList = displayAll(criteria);
         if (beanArrayList == null) {
             System.err.println("No record found");
         } else {
             System.out.println(String.format("%-10s%-30s%-10s%-10s%-10s%-15s%-15s", "ID", "Name", "Marks1", "Marks2", "Marks3", "Result", "Grade"));
             beanArrayList.forEach(System.out::println);
         }
+        return beanArrayList;
     }
 
     /**
