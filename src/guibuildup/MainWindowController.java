@@ -49,5 +49,6 @@ public class MainWindowController {
         stage.setTitle("Student Data");
         stage.initOwner(mainWindowController.getScene().getWindow());
         stage.setScene(new Scene(root));
+        stage.show();
     }
 }
