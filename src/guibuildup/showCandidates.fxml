@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
             prefHeight="400.0" prefWidth="957.0" styleClass="background" stylesheets="@style.css"
             xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
@@ -18,7 +19,11 @@
         <TableView fx:id="studentTable" prefHeight="400.0" prefWidth="905.0" styleClass="background"
                    tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
             <columns>
-                <TableColumn prefWidth="68.79998475313187" text="ID" />
+                <TableColumn prefWidth="68.79998475313187" text="ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id"/>
+                    </cellValueFactory>
+                </TableColumn>
                 <TableColumn prefWidth="267.99998474121094" text="Name" />
                 <TableColumn prefWidth="106.4000244140625" text="Maths" />
                 <TableColumn prefWidth="116.79998779296875" text="Physics" />
