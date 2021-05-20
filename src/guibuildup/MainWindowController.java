@@ -44,5 +44,6 @@ public class MainWindowController {
     public void showCandidateRecord(){
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("showCandidates.fxml"));
     }
 }
