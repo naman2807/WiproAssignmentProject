@@ -48,5 +48,6 @@ public class MainWindowController {
         Parent root = loader.load();
         stage.setTitle("Student Data");
         stage.initOwner(mainWindowController.getScene().getWindow());
+        stage.setScene(new Scene(root));
     }
 }
