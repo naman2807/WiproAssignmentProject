@@ -42,6 +42,6 @@ public class MainWindowController {
     }
 
     public void showCandidateRecord(){
-
+        Stage stage = new Stage();
     }
 }
