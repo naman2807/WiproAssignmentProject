@@ -53,6 +53,7 @@ public class MainWindowController {
         String criteria = showCandidateRecord.getSelectionModel().getSelectedItem();
         showCandidatesController.showStudentRecord(criteria);
         stage.show();
+        stage.setOnCloseRequest(windowEvent -> showCandidatesController.clear());
 
     }
 }
