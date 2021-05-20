@@ -39,7 +39,11 @@
                         <PropertyValueFactory property="m2"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn prefWidth="120.79998779296875" text="Chemistry" />
+                <TableColumn prefWidth="120.79998779296875" text="Chemistry" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="m3"/>
+                    </cellValueFactory>
+                </TableColumn>
                 <TableColumn prefWidth="114.39996337890625" text="Result" />
                 <TableColumn prefWidth="145.60009765625" text="Grade" />
             </columns>
