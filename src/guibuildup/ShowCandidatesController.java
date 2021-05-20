@@ -1,5 +1,9 @@
 package guibuildup;
 
+import com.wipro.candidate.bean.CandidateBean;
+import javafx.fxml.FXML;
+import javafx.scene.control.TableView;
+
 /**
  * Created By: Naman Agarwal
  * User ID: naman2807
@@ -9,4 +13,6 @@ package guibuildup;
  */
 
 public class ShowCandidatesController {
+    @FXML
+    private TableView<CandidateBean> studentTable;
 }
