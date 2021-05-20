@@ -1,6 +1,8 @@
 package guibuildup;
 
 import com.wipro.candidate.bean.CandidateBean;
+import com.wipro.candidate.service.CandidateMain;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
 
@@ -19,7 +21,7 @@ public class ShowCandidatesController {
     public ShowCandidatesController(){}
 
     public void showStudentRecord(String criteria){
-
+        ObservableList<CandidateBean> list = CandidateMain.showCandidateList(criteria);
     }
 
     public void clear(){
