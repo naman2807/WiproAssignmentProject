@@ -130,10 +130,8 @@ public class CandidateMain {
     public static ObservableList<CandidateBean> showCandidateList(String criteria) {
         ObservableList<CandidateBean> beanArrayList = displayAll(criteria);
         if (beanArrayList == null) {
-            System.err.println("No record found");
-        } else {
-            System.out.println(String.format("%-10s%-30s%-10s%-10s%-10s%-15s%-15s", "ID", "Name", "Marks1", "Marks2", "Marks3", "Result", "Grade"));
-            beanArrayList.forEach(System.out::println);
+            showAlert(Alert.AlertType.ERROR,"Warning!", "No Data Found",
+                    "Please enter some data to show records");
         }
         return beanArrayList;
     }
