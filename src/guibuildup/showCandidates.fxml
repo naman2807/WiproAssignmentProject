@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
@@ -28,12 +29,13 @@
             <children>
                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@GLA_University_logo.png" />
+                        <Image url="@../Pictures/Saved%20Pictures/GLA_University_logo.png" />
                     </image>
                     <HBox.margin>
                         <Insets bottom="20.0" left="10.0" top="10.0" />
                     </HBox.margin>
                 </ImageView>
+                <Label text="Label" />
             </children>
         </HBox>
     </top>
