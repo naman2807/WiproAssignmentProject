@@ -15,4 +15,6 @@ import javafx.scene.control.TableView;
 public class ShowCandidatesController {
     @FXML
     private TableView<CandidateBean> studentTable;
+
+    public ShowCandidatesController(){}
 }
