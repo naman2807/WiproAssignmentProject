@@ -24,7 +24,11 @@
                         <PropertyValueFactory property="id"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn prefWidth="267.99998474121094" text="Name" />
+                <TableColumn prefWidth="267.99998474121094" text="Name" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+                    </cellValueFactory>
+                </TableColumn>
                 <TableColumn prefWidth="106.4000244140625" text="Maths" />
                 <TableColumn prefWidth="116.79998779296875" text="Physics" />
                 <TableColumn prefWidth="120.79998779296875" text="Chemistry" />
