@@ -44,7 +44,11 @@
                         <PropertyValueFactory property="m3"/>
                     </cellValueFactory>
                 </TableColumn>
-                <TableColumn prefWidth="114.39996337890625" text="Result" />
+                <TableColumn prefWidth="114.39996337890625" text="Result" >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="result"/>
+                    </cellValueFactory>
+                </TableColumn>
                 <TableColumn prefWidth="145.60009765625" text="Grade" />
             </columns>
         </TableView>
