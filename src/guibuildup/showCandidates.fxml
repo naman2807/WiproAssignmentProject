@@ -10,14 +10,17 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="957.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="957.0" styleClass="background" stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
 
     <center>
-        <TableView prefHeight="400.0" prefWidth="905.0" styleClass="background" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <TableView fx:id="studentTable" prefHeight="400.0" prefWidth="905.0" styleClass="background"
+                   tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
             <columns>
                 <TableColumn prefWidth="68.79998475313187" text="ID" />
-                <TableColumn prefWidth="281.6000213623047" text="Name" />
-                <TableColumn prefWidth="92.0" text="Maths" />
+                <TableColumn prefWidth="267.99998474121094" text="Name" />
+                <TableColumn prefWidth="106.4000244140625" text="Maths" />
                 <TableColumn prefWidth="116.79998779296875" text="Physics" />
                 <TableColumn prefWidth="120.79998779296875" text="Chemistry" />
                 <TableColumn prefWidth="114.39996337890625" text="Result" />
