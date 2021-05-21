@@ -7,6 +7,7 @@ import com.wipro.candidate.util.WrongDataException;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.stage.Stage;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -114,6 +115,17 @@ public class CandidateMain {
     }
 
     private static void showAlert(Alert.AlertType type, String title, String headerText, String contentText){
+        Alert alert = new Alert(type);
+        alert.setTitle(title);
+        alert.setHeaderText(headerText);
+        alert.setContentText(contentText);
+        Optional<ButtonType> result = alert.showAndWait();
+        if(result.isPresent() && result.get() == ButtonType.OK){
+            alert.close();
+        }
+    }
+
+    private static void showAlert(Alert.AlertType type, String title, String headerText, String contentText, Stage stage){
         Alert alert = new Alert(type);
         alert.setTitle(title);
         alert.setHeaderText(headerText);
