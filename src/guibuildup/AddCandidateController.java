@@ -33,6 +33,10 @@ public class AddCandidateController {
         this.stage = stage;
     }
 
+    public Button getAddCandidateRecord() {
+        return addCandidateRecord;
+    }
+
     public void addCandidateToDatabase(){
         String name = studentName.getText();
         int maths = Integer.parseInt(marks1.getText());
