@@ -4,13 +4,13 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class CandidateBean {
-    private SimpleStringProperty id;
-    private SimpleStringProperty name;
-    private SimpleIntegerProperty m1;
-    private SimpleIntegerProperty m2;
-    private SimpleIntegerProperty m3;
-    private SimpleStringProperty result;
-    private SimpleStringProperty grade;
+    private final SimpleStringProperty id = new SimpleStringProperty("");
+    private final SimpleStringProperty name = new SimpleStringProperty("");
+    private final SimpleIntegerProperty m1 = new SimpleIntegerProperty();
+    private final SimpleIntegerProperty m2 = new SimpleIntegerProperty();
+    private final SimpleIntegerProperty m3 = new SimpleIntegerProperty();
+    private final SimpleStringProperty result = new SimpleStringProperty();
+    private final SimpleStringProperty grade = new SimpleStringProperty();
 
     public CandidateBean() {
     }
