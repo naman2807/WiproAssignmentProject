@@ -129,7 +129,7 @@
         </VBox>
     </center>
     <bottom>
-        <Button mnemonicParsing="false" onAction="#addCandidateToDatabase" prefWidth="150.0" text="Add Candidate" BorderPane.alignment="CENTER">
+        <Button fx:id="addCandidateRecord" mnemonicParsing="false" onAction="#addCandidateToDatabase" prefWidth="150.0" text="Add Candidate" BorderPane.alignment="CENTER">
             <BorderPane.margin>
                 <Insets bottom="130.0" right="45.0" />
             </BorderPane.margin>

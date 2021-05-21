@@ -89,7 +89,8 @@
                                 <Insets left="20.0" top="10.0" />
                             </HBox.margin>
                         </Label>
-                        <Button id="addCandidate" onAction="#setAddCandidate" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="13.0" prefWidth="126.0" styleClass="btn" text="Add Candidate">
+                        <Button fx:id="addCandidate" onAction="#setAddCandidate"
+                                maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="13.0" prefWidth="126.0" styleClass="btn" text="Add Candidate">
                             <HBox.margin>
                                 <Insets left="300.0" top="7.0" />
                             </HBox.margin>

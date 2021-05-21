@@ -3,6 +3,7 @@ package guibuildup;
 import com.wipro.candidate.bean.CandidateBean;
 import com.wipro.candidate.service.CandidateMain;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -23,6 +24,8 @@ public class AddCandidateController {
     private TextField marks2;
     @FXML
     private TextField marks3;
+    @FXML
+    private Button addCandidateRecord;
 
     Stage stage;
 
