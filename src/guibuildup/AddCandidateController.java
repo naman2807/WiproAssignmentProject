@@ -24,7 +24,7 @@ public class AddCandidateController {
     @FXML
     private TextField marks3;
 
-    Stage stage = new Stage();
+    Stage stage;
 
     public AddCandidateController(Stage stage) {
         this.stage = stage;

@@ -41,6 +41,7 @@ public class MainWindowController {
         stage.setTitle("Add Candidate");
         stage.initOwner(mainWindowController.getScene().getWindow());
         stage.setScene(new Scene(root));
+        new AddCandidateController(stage);
         stage.show();
     }
 
