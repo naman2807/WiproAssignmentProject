@@ -61,6 +61,6 @@ public class MainWindowController {
     }
 
     public void closeSoftware(){
-
+        System.exit(0);
     }
 }
