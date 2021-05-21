@@ -133,6 +133,7 @@ public class CandidateMain {
         Optional<ButtonType> result = alert.showAndWait();
         if(result.isPresent() && result.get() == ButtonType.OK){
             alert.close();
+            stage.close();
         }
     }
 
