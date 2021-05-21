@@ -26,6 +26,10 @@ public class AddCandidateController {
 
     Stage stage = new Stage();
 
+    public AddCandidateController(Stage stage) {
+        this.stage = stage;
+    }
+
     public void addCandidateToDatabase(){
         String name = studentName.getText();
         int maths = Integer.parseInt(marks1.getText());
