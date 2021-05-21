@@ -33,7 +33,7 @@ public class CandidateMain {
     /**
      * This method takes details of candidate from the user.
      */
-    public static void addCandidateToRecord(CandidateBean candidateBean) {
+    public static void addCandidateToRecord(CandidateBean candidateBean, Stage stage) {
         String name = candidateBean.getName();
         int m1 = candidateBean.getM1();
         int m2 = candidateBean.getM2();
