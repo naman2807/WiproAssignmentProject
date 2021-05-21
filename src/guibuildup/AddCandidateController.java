@@ -5,6 +5,7 @@ import com.wipro.candidate.service.CandidateMain;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 /**
@@ -17,6 +18,8 @@ import javafx.stage.Stage;
 
 public class AddCandidateController {
     @FXML
+    public BorderPane addCandidateBorderPane;
+    @FXML
     private TextField studentName;
     @FXML
     private TextField marks1;
@@ -27,17 +30,14 @@ public class AddCandidateController {
     @FXML
     private Button addCandidateRecord;
 
-    Stage stage;
-
-    public AddCandidateController(Stage stage) {
-        this.stage = stage;
+    public AddCandidateController() {
     }
 
     public Button getAddCandidateRecord() {
         return addCandidateRecord;
     }
 
-    public void addCandidateToDatabase(){
+    public void addCandidateToDatabase(Stage stage){
         String name = studentName.getText();
         int maths = Integer.parseInt(marks1.getText());
         int physics = Integer.parseInt(marks2.getText());

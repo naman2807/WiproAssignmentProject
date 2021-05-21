@@ -41,8 +41,9 @@ public class MainWindowController {
         stage.setTitle("Add Candidate");
         stage.initOwner(mainWindowController.getScene().getWindow());
         stage.setScene(new Scene(root));
-        AddCandidateController candidateController = new AddCandidateController(stage);
+        AddCandidateController candidateController = fxmlLoader.getController();
         stage.show();
+        candidateController.getAddCandidateRecord().setOnAction(event -> candidateController.addCandidateToDatabase(stage));
     }
 
     public void showCandidateRecord() throws IOException {

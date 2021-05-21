@@ -14,7 +14,7 @@
 <BorderPane fx:id="addCandidateBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
             minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="background"
             fx:controller="guibuildup.AddCandidateController"
-            stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+            stylesheets="@style.css"  xmlns:fx="http://javafx.com/fxml/1">
     <top>
         <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <children>
@@ -129,7 +129,8 @@
         </VBox>
     </center>
     <bottom>
-        <Button fx:id="addCandidateRecord" mnemonicParsing="false" onAction="#addCandidateToDatabase" prefWidth="150.0" text="Add Candidate" BorderPane.alignment="CENTER">
+        <Button fx:id="addCandidateRecord" mnemonicParsing="false"
+                 prefWidth="150.0" text="Add Candidate" BorderPane.alignment="CENTER">
             <BorderPane.margin>
                 <Insets bottom="130.0" right="45.0" />
             </BorderPane.margin>
