@@ -24,7 +24,9 @@ public class AddCandidateController {
     @FXML
     private TextField marks3;
 
-    public void addCandidateToDatabase(Stage stage){
+    Stage stage = new Stage();
+
+    public void addCandidateToDatabase(){
         String name = studentName.getText();
         int maths = Integer.parseInt(marks1.getText());
         int physics = Integer.parseInt(marks2.getText());
