@@ -40,12 +40,12 @@ public class CandidateMain {
         int m3 = candidateBean.getM3();
         if (name == null || name.isBlank() || name.isEmpty() || name.length() < 2 || m1 < 0 || m1 > 100
                 || m2 < 0 || m2 > 100 || m3 < 0 || m3 > 100) {
-            addCandidate(null);
+            addCandidate(null, stage);
         } else {
             String id = candidateDAO.generateCandidateId(name);
             String result = calculateResult(m1, m2, m3);
             String grade = calculateGrade(m1, m2, m3);
-            addCandidate(new CandidateBean(id, name, m1, m2, m3, result, grade));
+            addCandidate(new CandidateBean(id, name, m1, m2, m3, result, grade), stage);
         }
     }
 
@@ -103,10 +103,10 @@ public class CandidateMain {
             String status = candidateDAO.addCandidate(studBean);
             if (status.equalsIgnoreCase("fail")) {
                 showAlert(Alert.AlertType.ERROR,"Error","Cannot add student to record",
-                        "Please check data again." );
+                        "Please check data again.", stage );
             } else {
                 showAlert(Alert.AlertType.INFORMATION,"Confirmation",studBean.getId() + ":" + status,
-                       "Added!. Click on OK to close window." );
+                       "Added!. Click on OK to close window." , stage);
             }
         } catch (WrongDataException e) {
             System.out.println(e.toString());
