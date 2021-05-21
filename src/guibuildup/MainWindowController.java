@@ -1,6 +1,9 @@
 package guibuildup;
 
+import com.wipro.candidate.bean.CandidateBean;
+import com.wipro.candidate.service.CandidateMain;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -51,7 +54,8 @@ public class MainWindowController {
         stage.setScene(new Scene(root));
         String criteria = showCandidateRecord.getSelectionModel().getSelectedItem();
         ShowCandidatesController showCandidatesController = loader.getController();
-        showCandidatesController.showStudentRecord(criteria);
+        ObservableList<CandidateBean> list = CandidateMain.showCandidateList(criteria);
+//        showCandidatesController.showStudentRecord(criteria);
         stage.show();
         stage.setOnCloseRequest(windowEvent -> showCandidatesController.clear());
 
