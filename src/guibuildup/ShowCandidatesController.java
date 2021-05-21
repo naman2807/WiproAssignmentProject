@@ -26,6 +26,11 @@ public class ShowCandidatesController {
     }
 
     public void clear(){
-        studentTable.getItems().clear();
+        if(studentTable.getItems() != null){
+            studentTable.getItems().clear();
+        }else{
+
+        }
+
     }
 }

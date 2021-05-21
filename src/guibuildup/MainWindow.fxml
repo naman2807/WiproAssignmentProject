@@ -115,7 +115,9 @@
                                 <Insets left="20.0" top="10.0" />
                             </HBox.margin>
                         </Label>
-                        <ComboBox id="showCandidateRecord" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="126.0" styleClass="button">
+                        <ComboBox onAction="#showCandidateRecord" fx:id="showCandidateRecord" maxHeight="-Infinity"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0"
+                                  prefWidth="126.0" styleClass="button">
                             <items>
                                 <FXCollections fx:factory="observableArrayList">
                                     <String fx:id="pass" fx:value="Pass" />

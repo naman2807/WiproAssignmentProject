@@ -46,11 +46,12 @@ public class MainWindowController {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("showCandidates.fxml"));
         Parent root = loader.load();
-        ShowCandidatesController showCandidatesController = loader.getController();
         stage.setTitle("Student Data");
         stage.initOwner(mainWindowController.getScene().getWindow());
         stage.setScene(new Scene(root));
         String criteria = showCandidateRecord.getSelectionModel().getSelectedItem();
+        System.out.println(criteria);
+        ShowCandidatesController showCandidatesController = loader.getController();
         showCandidatesController.showStudentRecord(criteria);
         stage.show();
         stage.setOnCloseRequest(windowEvent -> showCandidatesController.clear());
