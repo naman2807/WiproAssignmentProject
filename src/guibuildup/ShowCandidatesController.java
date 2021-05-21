@@ -20,8 +20,7 @@ public class ShowCandidatesController {
 
     public ShowCandidatesController(){}
 
-    public void showStudentRecord(String criteria){
-        ObservableList<CandidateBean> list = CandidateMain.showCandidateList(criteria);
+    public void showStudentRecord(String criteria, ObservableList<CandidateBean> list){
         studentTable.setItems(list);
     }
 
