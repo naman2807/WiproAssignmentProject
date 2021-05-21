@@ -98,7 +98,7 @@ public class CandidateMain {
      *
      * @param studBean
      */
-    private static void addCandidate(CandidateBean studBean) {
+    private static void addCandidate(CandidateBean studBean, Stage stage) {
         try {
             String status = candidateDAO.addCandidate(studBean);
             if (status.equalsIgnoreCase("fail")) {
