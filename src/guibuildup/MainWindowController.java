@@ -25,11 +25,7 @@ import java.io.IOException;
 
 public class MainWindowController {
     @FXML
-    private Button addCandidate;
-    @FXML
     private ComboBox<String> showCandidateRecord;
-    @FXML
-    private Button exit;
     @FXML
     private BorderPane mainWindowController;
 
@@ -62,5 +58,9 @@ public class MainWindowController {
             stage.show();
             stage.setOnCloseRequest(windowEvent -> showCandidatesController.clear());
         }
+    }
+
+    public void closeSoftware(){
+
     }
 }
