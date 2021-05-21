@@ -16,19 +16,7 @@ import java.util.Scanner;
 
 
 public class CandidateMain {
-    private static final Scanner scanner = new Scanner(System.in);
     private static final CandidateDAO candidateDAO = new CandidateDAO();
-
-    /**
-     * This method shows instructions.
-     */
-    private static void instructions() {
-        System.out.println("Following are the functions which can be performed with this software:\n" +
-                "Press 1 to add candidate to record.\n" +
-                "Press 2 to show candidates list based on result criteria.\n" +
-                "Press 3 to show instructions.\n" +
-                "Press 4 to exit\n");
-    }
 
     /**
      * This method takes details of candidate from the user.
