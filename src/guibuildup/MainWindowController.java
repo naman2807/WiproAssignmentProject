@@ -50,7 +50,6 @@ public class MainWindowController {
         stage.initOwner(mainWindowController.getScene().getWindow());
         stage.setScene(new Scene(root));
         String criteria = showCandidateRecord.getSelectionModel().getSelectedItem();
-        System.out.println(criteria);
         ShowCandidatesController showCandidatesController = loader.getController();
         showCandidatesController.showStudentRecord(criteria);
         stage.show();
