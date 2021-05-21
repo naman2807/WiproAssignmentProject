@@ -55,9 +55,10 @@ public class MainWindowController {
         String criteria = showCandidateRecord.getSelectionModel().getSelectedItem();
         ShowCandidatesController showCandidatesController = loader.getController();
         ObservableList<CandidateBean> list = CandidateMain.showCandidateList(criteria);
-//        showCandidatesController.showStudentRecord(criteria);
-        stage.show();
-        stage.setOnCloseRequest(windowEvent -> showCandidatesController.clear());
-
+        if(list != null){
+            showCandidatesController.showStudentRecord(list);
+            stage.show();
+            stage.setOnCloseRequest(windowEvent -> showCandidatesController.clear());
+        }
     }
 }
