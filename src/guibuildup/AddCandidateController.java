@@ -4,6 +4,7 @@ import com.wipro.candidate.bean.CandidateBean;
 import com.wipro.candidate.service.CandidateMain;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 /**
  * Created By: Naman Agarwal
@@ -23,7 +24,7 @@ public class AddCandidateController {
     @FXML
     private TextField marks3;
 
-    public void addCandidateToDatabase(){
+    public void addCandidateToDatabase(Stage stage){
         String name = studentName.getText();
         int maths = Integer.parseInt(marks1.getText());
         int physics = Integer.parseInt(marks2.getText());
