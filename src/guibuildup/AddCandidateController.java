@@ -35,6 +35,6 @@ public class AddCandidateController {
         int maths = Integer.parseInt(marks1.getText());
         int physics = Integer.parseInt(marks2.getText());
         int chemistry = Integer.parseInt(marks3.getText());
-        CandidateMain.addCandidateToRecord(new CandidateBean(name, maths, physics, chemistry));
+        CandidateMain.addCandidateToRecord(new CandidateBean(name, maths, physics, chemistry), stage);
     }
 }
