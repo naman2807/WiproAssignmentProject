@@ -1,4 +1,7 @@
 # WiproAssignmentProject
 Addition and Display of records of result of Candidates.
 # Project Objective
-Create a GUI based Java application that would allow the admin of a training institute to add and view candidate information. The data received from the user will be stored in database and retrieved when required.
+It is very difficult to maintain large records manually. This can be done easily if there exists a software that will maintain records and can be retrieved when needed.
+# Functionalities
+1. Addition of candidate and his/her marks.
+2. Display of record based on results.
